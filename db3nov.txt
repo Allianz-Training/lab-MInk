@@ -1,0 +1,18 @@
+ex1. SELECT sname, age FROM Sailors
+
+ex2. SELECT sname FROM Sailors,Reserves WHERE Reserves.bid == 103 AND Sailors.sid == Reserves.sid
+
+ex3. SELECT Sailors.sid FROM Sailors,Reserves,Boats 
+     WHERE Sailors.sid == Reserves.sid AND Boats.bid == Reserves.bid AND Boats.color == "Red"
+
+ex4. SELECT sname FROM Sailors
+     INNER JOIN Reserves 
+     on Sailors.sid = Reserves.sid 
+    JOIN Boats on Reserves.bid = Boats.bid 
+     WHERE Boats.color ="Red"
+
+ex5. SELECT color FROM Boats
+     INNER JOIN Reserves 
+     on Reserves.bid = Boats.bid 
+     JOIN Sailors on Reserves.sid = Sailors.sid
+     WHERE Sailors.sname ="Lubber"
