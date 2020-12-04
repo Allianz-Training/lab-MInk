@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let n = prompt("input your number");
+
+      // draw1(n);
+
+      // draw2(n);
+
+      // draw3(n);
+
+      // draw4(n);
+
+      // draw5(n);
+
+      // draw6(n);
+
+      // draw7(n);
+
+      // draw8(n);
+
+      // draw9(n);
+
+      // draw10(n);
+
+      // draw11(n);
+
+      // draw12(n);
+
+      // draw13(n);
+
+      // draw14(n);
+
+      // draw15(n);
+
+      // draw17(n);
+
+      // draw18(n);
+
+      // draw19(n);
+
+      // draw20(n);
+
+      draw21(n);
+
+      // draw22(n);
+
+      // draw23(n);
+
+      // draw24(n);
+
+      function draw1(n) {
+        star = "";
+        for (let i = 0; i < n; i++) {
+          star += "*";
+        }
+        alert("#1\n" + star);
+      }
+
+      function draw2(n) {
+        star = "";
+        for (let i = 0; i < n; i++) {
+          for (let j = 0; j < n; j++) {
+            star += "*";
+          }
+          star += "\n";
+        }
+        alert("#2\n" + star);
+      }
+
+      function draw3(n) {
+        star = "";
+        count = 0;
+        for (let i = 0; i < n; i++) {
+          for (let j = 0; j < n; j++) {
+            count++;
+            star += count;
+          }
+          star += "\n";
+          count = 0;
+        }
+        alert("#3\n" + star);
+      }
+
+      function draw4(n) {
+        star = "";
+        count = 1;
+        for (let i = 0; i < n; i++) {
+          for (let j = 0; j < n; j++) {
+            star += count;
+          }
+          star += "\n";
+          count++;
+        }
+        alert("#4\n" + star);
+      }
+
+      function draw5(n) {
+        star = "";
+        count = n;
+        for (let i = 0; i < n; i++) {
+          for (let j = 0; j < n; j++) {
+            star += count;
+          }
+          star += "\n";
+          count--;
+        }
+        alert("#5\n" + star);
+      }
+
+      function draw6(n) {
+        star = "";
+        count = 1;
+        for (let i = 0; i < n; i++) {
+          for (let j = 0; j < n; j++) {
+            star += count;
+            count++;
+          }
+          star += "\n";
+        }
+        alert("#6\n" + star);
+      }
+
+      function draw7(n) {
+        star = "";
+        count = n * n;
+        for (let i = 0; i < n; i++) {
+          for (let j = 0; j < n; j++) {
+            star += count;
+            count--;
+          }
+          star += "\n";
+        }
+        alert("#7\n" + star);
+      }
+
+      function draw8(n) {
+        star = "";
+        count = 0;
+        for (let j = 1; j <= n; j++) {
+          star += count + "\n";
+          count = Math.pow(2, j);
+        }
+        alert("#8\n" + star);
+      }
+
+      function draw9(n) {
+        star = "";
+        count = 2;
+        for (let j = 0; j < n; j++) {
+          star += count + "\n";
+          count *= 2;
+        }
+        alert("#9\n" + star);
+      }
+
+      function draw10(n) {
+        star = "";
+        count = 1;
+        for (let i = 1; i <= n; i++) {
+          count = i;
+          for (let j = 1; j <= n; j++) {
+            count = i * j;
+            star += count;
+          }
+          star += "\n";
+        }
+        alert("#10\n" + star);
+      }
+
+      function draw11(n) {
+        star = "";
+        for (let i = 1; i <= n; i++) {
+          for (let j = 1; j <= n; j++) {
+            if (j == i) {
+              star += "-";
+            } else {
+              star += "*";
+            }
+          }
+          star += "\n";
+        }
+        alert("#11\n" + star);
+      }
+
+      function draw12(n) {
+        star = "";
+        for (let i = n; i > 0; i--) {
+          for (let j = 1; j <= n; j++) {
+            if (j == i) {
+              star += "-";
+            } else {
+              star += "*";
+            }
+          }
+          star += "\n";
+        }
+        alert("#12\n" + star);
+      }
+
+      function draw13(n) {
+        star = "";
+        for (let i = 1; i <= n; i++) {
+          for (let j = 1; j <= n; j++) {
+            if (j <= i) {
+              star += "*";
+            } else {
+              star += "-";
+            }
+          }
+          star += "\n";
+        }
+        alert("#13\n" + star);
+      }
+
+      function draw14(n) {
+        star = "";
+        for (let i = n; i > 0; i--) {
+          for (let j = 1; j <= n; j++) {
+            if (j > i) {
+              star += "-";
+            } else {
+              star += "*";
+            }
+          }
+          star += "\n";
+        }
+        alert("#14\n" + star);
+      }
+
+      function draw15(n) {
+        star = "";
+        for (let i = 1; i <= n * 2 - 1; i++) {
+          for (let j = 1; j <= n; j++) {
+            if (j <= i && i <= n) {
+              star += "*";
+            } else if (j <= n - (i - n) && i > n) {
+              star += "*";
+            } else {
+              star += "-";
+            }
+          }
+          star += "\n";
+        }
+        alert("#14\n" + star);
+      }
+
+      function draw17(n) {
+        star = "";
+        for (let i = n; i > 0; i--) {
+          for (let j = 1; j <= n; j++) {
+            if (j < i) {
+              star += "-";
+            } else {
+              star += "*";
+            }
+          }
+          star += "\n";
+        }
+        alert("#17\n" + star);
+      }
+
+      function draw18(n) {
+        star = "";
+        for (let i = 1; i <= n; i++) {
+          for (let j = 1; j <= n; j++) {
+            if (j >= i) {
+              star += "*";
+            } else {
+              star += "-";
+            }
+          }
+          star += "\n";
+        }
+        alert("#18\n" + star);
+      }
+
+      function draw19(n) {
+        star = "";
+        for (let i = n; i > 0; i--) {
+          for (let j = 1; j <= n; j++) {
+            if (j < i) {
+              star += "-";
+            } else {
+              star += "*";
+            }
+          }
+          star += "\n";
+        }
+        for (let i = 2; i <= n; i++) {
+          for (let j = 1; j <= n; j++) {
+            if (j >= i) {
+              star += "*";
+            } else {
+              star += "-";
+            }
+          }
+          star += "\n";
+        }
+        alert("#19\n" + star);
+      }
+
+      function draw20(n) {
+        star = "";
+        count = 0;
+        for (let i = n; i > 0; i--) {
+          for (let j = 1; j <= n; j++) {
+            if (j < i) {
+              star += "-";
+            } else {
+              count++;
+              star += count;
+            }
+          }
+          star += "\n";
+        }
+        for (let i = 2; i <= n; i++) {
+          for (let j = 1; j <= n; j++) {
+            if (j >= i) {
+              count++;
+              star += count;
+            } else {
+              star += "-";
+            }
+          }
+          star += "\n";
+        }
+        alert("#20\n" + star);
+      }
+
+      // function draw21(n) {
+      //   star = "";
+      //   for (let i = 1; i <= n; i++) {
+      //     for (let j = 1; j <= n * 2 - 1; j++) {
+      //       // alert(String(j>(n-i)))
+      //       if (j > n - i && j < n + i) {
+      //         console.log(j);
+      //         console.log(n + i);
+      //         console.log(j < n + i);
+      //         star += "*";
+      //         console.log(`n=${n}, j=${j}, i=${i}`);
+      //         // alert((n+1))
+      //       } else {
+      //         star += "-";
+      //       }
+      //     }
+      //     star += "\n";
+      //   }
+      //   alert("#21\n" + star);
+      // }
+
+      draw21(3);
+      console.log("\n================ 22 ===============");
+      const draw22 = (n = 2) => {
+        let str = "";
+        for (let i = n; i > 0; i--) {
+          str += "-".repeat(n - i);
+          str += "*".repeat(2 * i - 1);
+          str += "-".repeat(n - i);
+          str += "\n";
+        }
+        console.log(str);
+      };
+
+      draw22(3);
+      console.log("\n================ 23 ===============");
+      const draw23 = (n = 2) => {
+        let str = "";
+        for (let i = 1; i < n + 1; i++) {
+          str += "-".repeat(n - i);
+          str += "*".repeat(2 * i - 1);
+          str += "-".repeat(n - i);
+          str += "\n";
+        }
+
+        for (let i = n - 1; i > 0; i--) {
+          str += "-".repeat(n - i);
+          str += "*".repeat(2 * i - 1);
+          str += "-".repeat(n - i);
+          str += "\n";
+        }
+        console.log(str);
+      };
+
+      draw23(3);
+      console.log("\n================ 24 ===============");
+      const draw24 = (n = 2) => {
+        let str = "";
+        let count = 1;
+        for (let i = 1; i < n + 1; i++) {
+          str += "-".repeat(n - i);
+          for (let j = 0; j < 2 * i - 1; j++) {
+            str += count++ + "";
+          }
+          str += "-".repeat(n - i);
+          str += "\n";
+        }
+        for (let i = n - 1; i > 0; i--) {
+          str += "-".repeat(n - i);
+          for (let j = 0; j < 2 * i - 1; j++) {
+            str += count++ + "";
+          }
+          str += "-".repeat(n - i);
+          str += "\n";
+        }
+      };
+      console.log(str);
+    </script>
+  </body>
+</html>
